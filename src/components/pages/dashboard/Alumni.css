@@ -1,0 +1,335 @@
+.Alumni-Wrapper {
+  width: 98%;
+  flex: 1;
+  overflow-x: hidden;
+  align-self: center;
+ 
+ flex-flow: column nowrap;
+ align-items: center;
+ justify-content: space-around;
+}
+.Iframe-Al{
+    width:85vw;
+    height:85vh;
+    z-index:10;
+    position: absolute;
+}
+
+.AlumniHeader {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-height: 88vh;
+  z-index: 2;
+  margin-bottom: 5vh;
+}
+
+.BGH {
+  width: 80%;
+  object-fit: cover;
+  max-height: 88vh;
+  position: relative;
+  z-index: 3;
+  transition: ease-in 800ms;
+ 
+}
+.BGH img{
+    width: 100%;
+    object-fit: cover;
+   height: 88vh;
+    transition: ease-in 800ms;
+    z-index: 3;
+   
+}
+.Alumni-BTW-Body{
+    width:100%;
+    display: flex;
+flex-flow: column nowrap;
+align-items: center;
+justify-content: space-around;
+}
+
+.Header-Content img {
+  max-width: 250px;
+  width: 100%;
+}
+
+.AlumniHeader .header-Main-text {
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+}
+.AlumniHeader .header-text-1 {
+  font-size: 25px;
+  font-weight: 400;
+  align-self: flex-start;
+  color: white;
+  width: 100%;
+}
+
+.AlumniHeader-Row {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+.Header-Content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  z-index: 100;
+}
+.AlumniCard-Wrapper {
+    cursor: pointer;
+    margin-bottom: 6vh;
+  position: relative;
+  max-width: 360px;
+  width: 100%;
+  height: 430px;
+  margin-left: 3vh;
+  display: flex;
+ 
+  transition: 1s ease-in;
+  border-radius: 10px;
+}
+.AlumniCard-Container {
+  position: absolute;
+  max-width: inherit;
+  width: 100%;
+  max-height: 550px;
+  height: 100%;
+  display: flex;
+  transition: 1s ease-in;
+  box-shadow: 4px 4px 8px hsl(0, 0%, 50%), -4px -4px 8px hsl(0, 0%, 50%);
+  border-radius: 6px;
+}
+
+.Alumni-Front {
+  position: absolute;
+  max-width: inherit;
+  width: 100%;
+  max-height: 550px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  opacity: 1;
+  transition: 1s ease-in;
+  padding: 10px;
+}
+.Alumni-Front img {
+  max-width: inherit;
+  width: 100%;
+  max-height: 450px;
+  height: 100%;
+  transition: 1s ease-in;
+}
+
+.AlumniCard-frontText-holder {
+  max-width: 400px;
+  width: 100%;
+  max-height: 100px;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  transition: 1s ease-in;
+  
+}
+
+.Alumni-Back {
+  position: absolute;
+  max-width: 400px;
+  width: 100%;
+  max-height: 550px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: 1s ease-in;
+  padding: 10px;
+  
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.ACBDH {
+  max-width: 400px;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  transition: 1s ease-in;
+  flex:0.23;
+  
+}
+
+.AlumniCard-Wrapper:hover .AlumniCard-Container {
+  transform: rotateY(180deg);
+  transition: 1s ease-in;
+}
+
+.AlumniCard-Wrapper:hover .Alumni-Front {
+  opacity: 0;
+  transition: 1s ease-in;
+}
+
+.AlumniCard-Wrapper:hover .Alumni-Back {
+  opacity: 1;
+  transition: 1s ease-in;
+}
+
+.ACBCDH {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  
+  flex:0.23;
+}
+.Alumni-search{
+    width:100%;
+    display: block;
+    float: right;
+}
+.Alumni-Al-Text{
+font-size: 2vmax;
+margin-bottom: 3vh;
+font-weight: 600;
+color: gray;
+margin-top: 7vh;
+}
+.AlumniSearchHolder{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-bottom: 3vh;
+    border-bottom: 3px solid black;
+    align-self: center;
+    display:none;
+    cursor: pointer;
+}
+
+.Alumni-Back .ACBD {
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  flex:0.55;
+  text-align: center;
+  
+}
+.Filter-Alumni{
+    font-size: 2vmax;
+    background-color: rgb(210, 177, 30);
+    border-radius: 5px;
+
+    
+}
+.VisibleNow{
+    margin-top: 3vh;
+    display: flex;
+}
+
+
+.text-Al{
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+@media only screen and (max-width: 600px) {
+    .Alumni-Wrapper{
+        margin-left: none;
+    }
+   .AlumniHeader{
+   
+    position: relative;
+   }
+   .BGH{
+    
+   }
+
+  .AlumniHeader .header-text-1 {
+    align-self: center;
+    text-align: center;
+  }
+  .BGH {
+    height: 65vh;
+    width: 94vw;
+  }
+  .header-Main-text {
+    text-align: center;
+  }
+  .BGH{
+    height: 70vh;
+ }
+ .BGH img{
+    height: 70vh;
+ }
+}
+
+
+@media only screen and (max-width: 440px) {
+  .Alumni-Multi-Box {
+    padding: 20px;
+  }
+  .AlumniCard-Wrapper {
+    width: 300px;
+  }
+  .BGH{
+   height: 70vh;
+}
+.Header-Content{
+    max-height: 92vh;
+    height: 100%;
+}
+}
+
+
+@media only screen and (max-width: 340px) {
+  .Alumni-Multi-Box {
+    padding: 20px;
+  }
+  .AlumniCard-Wrapper {
+    width: 100%;
+    height: 340px;
+  }
+  .AlumniCard-Wrapper div{
+      width:100%;
+      max-width: none;
+  }
+}
+
+
+
+
+
+.Alumni-Wrapper::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(167, 161, 161);
+}
+
+.Alumni-Wrapper::-webkit-scrollbar-track-piece{
+    background-color: rgb(138, 134, 134);
+}
+.Alumni-Wrapper::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 2px;
+}

@@ -1,0 +1,6 @@
+.question-scroll {
+  width: 105%;
+  height: 550px;
+  overflow: auto;
+  text-align: justify;
+}
